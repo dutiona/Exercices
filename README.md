@@ -17,22 +17,22 @@ Trois sites incontournables :
  
  
 Header important c++11 :
-- <functional> : facilite le passage/la définition de foncteur à la volé.  Voir les lambda pour plus d’infos
-- <chrono> : pour la mesure du temps
-- <memory> : pour std ::shared_ptr std ::unique_ptr std::make_shared std::make_unique (super important). Ne jamais utiliser new et delete.
-- <random> : pour remplacer rand() : https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful
-- <string> : … ^^
-- <algorithm> <numeric> <utility> : contient des trucs cool pour les collections à itérateur.
+- &lt;functional&gt; : facilite le passage/la définition de foncteur à la volé.  Voir les lambda pour plus d’infos
+- &lt;chrono&gt; : pour la mesure du temps
+- &lt;memory&gt; : pour std ::shared_ptr std ::unique_ptr std::make_shared std::make_unique (super important). Ne jamais utiliser new et delete.
+- &lt;random&gt; : pour remplacer rand() : https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful
+- &lt;string&gt; : … ^^
+- &lt;algorithm&gt; &lt;numeric&gt; &lt;utility&gt; : contient des trucs cool pour les collections à itérateur.
 
-- Multi-threading : <thread> <atomic> voir <mutex>
-- IO : <iostream> <fstream> <sstream>
-- Containers : <array> qui remplace int a[15] -> std::array<int, 15>.
-- <vector> : dans le doute, toujours utiliser vector.
+- Multi-threading : &lt;thread&gt; &lt;atomic&gt; voir &lt;mutex&gt;
+- IO : &lt;iostream&gt; &lt;fstream&gt; &lt;sstream&gt;
+- Containers : &lt;array&gt; qui remplace int a[15] -&gt; std::array&lt;int, 15&gt;.
+- &lt;vector&gt; : dans le doute, toujours utiliser vector.
 - Voir dans std : map, list, queue, deque, stack
 - Voir aussi : boost::small_vector, boost::flat_set etc. pour des usages plus occasionnels.
  
-- <omp.h> (OpenMP) est de base dans VC. Pas besoin d’ajouter une dépendance.
-Pour le parallélisme intrusif mais super performant, il ya TBB, MSVC a un fork qui fonctionne pareil : <ppl.h>
+- &lt;omp.h&gt; (OpenMP) est de base dans VC. Pas besoin d’ajouter une dépendance.
+Pour le parallélisme intrusif mais super performant, il ya TBB, MSVC a un fork qui fonctionne pareil : &lt;ppl.h&gt;
 - Besoin de faire du CUDA : Visual peut embarquer le plugin nvidia nSight pour débugger les kernel qui ont été transféré sur ton GPU. Il y a même moyen de sélectionner les numéros de block et de thread/block qu'on veut inspecter. C’est de la tuerie.
  
  
