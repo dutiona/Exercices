@@ -29,3 +29,6 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Basic)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Puissance4)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/GoL)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/ECS)
